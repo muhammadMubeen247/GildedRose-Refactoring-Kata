@@ -129,7 +129,7 @@ class GildedRoseTest(unittest.TestCase):
         ]
         gilded_rose = GildedRose(items)
         gilded_rose.update_quality()
-        
+
         self.assertEqual(items[0].sell_in, 9)
         self.assertEqual(items[0].quality, 19)
 
@@ -139,10 +139,10 @@ class GildedRoseTest(unittest.TestCase):
         self.assertEqual(items[2].sell_in, 4)
         self.assertEqual(items[2].quality, 6)
 
-        self.assertEqual(items[3].sell_in, -1)
+        self.assertEqual(items[3].sell_in, 0)
         self.assertEqual(items[3].quality, 80)
 
-        self.assertEqual(items[4].sell_in, -2)
+        self.assertEqual(items[4].sell_in, -1)
         self.assertEqual(items[4].quality, 80)
 
         self.assertEqual(items[5].sell_in, 14)
